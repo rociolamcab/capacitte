@@ -1,6 +1,11 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
+  "schematics": {
+    "@schematics/angular:component": {
+      "flat": false
+    }
+  },
   "cli": {
     "packageManager": "npm"
   },
@@ -24,6 +29,9 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+              "src/favicon.ico",
+              "src/favicon.png",
+              "src/assets",
               {
                 "glob": "**/*",
                 "input": "public"

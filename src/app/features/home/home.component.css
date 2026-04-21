@@ -1,0 +1,21 @@
+.hero-section {
+  min-height: 85vh;
+}
+.hero-section .text-primary-custom {
+  color: var(--primary-color);
+}
+.hero-section .search-container {
+  max-width: 600px;
+  border: 1px solid #f1f5f9;
+}
+
+.display-font {
+  font-family: "Sora", sans-serif;
+  line-height: 1.1;
+  letter-spacing: -2px;
+}
+
+.hero-image-wrapper {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%);
+  border-radius: 2rem;
+}/*# sourceMappingURL=home.component.css.map */

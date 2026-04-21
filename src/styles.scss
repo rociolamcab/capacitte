@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+@use "bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sora:wght@100..800&display=swap');
+
+:root {
+  --primary-color: #6366f1;
+  --secondary-color: #8b5cf6;
+  --dark-display: #0f172a;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #f8fafc;
+  color: #475569;
+  margin: 0;
+}
+
+h1, h2, h3, .display-font {
+  font-family: 'Sora', sans-serif;
+  color: var(--dark-display);
+  font-weight: 700;
+}
+
+.btn-primary-capacitte {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+  &:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+  }
+}
+
+.hover-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+  }
+}

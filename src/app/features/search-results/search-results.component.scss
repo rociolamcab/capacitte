@@ -1,0 +1,26 @@
+.nav-tabs {
+  .nav-link {
+    color: #64748b;
+    background: transparent;
+    border-bottom: 2px solid transparent !important;
+    transition: all 0.3s ease;
+
+    &.active {
+      color: #0d6efd;
+      border-bottom: 2px solid #0d6efd !important;
+    }
+  }
+}
+
+aside {
+  .card {
+    background: #ffffff;
+    position: sticky;
+    top: 100px;
+  }
+}
+
+.form-check-input:checked {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}

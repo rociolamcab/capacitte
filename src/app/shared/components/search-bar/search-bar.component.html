@@ -1,4 +1,12 @@
-<div class="input-group p-2">
-  <input type="text" class="form-control border-0 shadow-none" placeholder="¿Qué quieres aprender hoy?">
-  <button class="btn btn-primary-capacitte rounded-3 px-4 shadow-sm ms-2">Buscar</button>
+<div class="input-group p-1">
+  <input 
+    type="text" 
+    class="form-control border-0 shadow-none ps-3" 
+    placeholder="¿Qué quieres aprender hoy?"
+    [(ngModel)]="searchTerm"
+    (keyup.enter)="onSearch()"> <button 
+    class="btn btn-primary-capacitte rounded-3 px-4 ms-2" 
+    (click)="onSearch()">
+    Buscar
+  </button>
 </div>

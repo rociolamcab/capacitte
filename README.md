@@ -2,7 +2,7 @@
 
 ¡Bienvenido a Capacitte! Esta es una plataforma diseñada para conectar talento con oportunidades.
 
-[**🌐 Ver MVP**](https://capacitte.vercel.com)
+[**🌐 Ver MVP**](https://capacitte.vercel.app)
 
 ## 🛠️ Tecnologías utilizadas
 * **Angular 19**

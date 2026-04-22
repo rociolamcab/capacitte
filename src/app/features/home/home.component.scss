@@ -1,24 +1,22 @@
-.hero-section {
-  min-height: 85vh;
-  
-  .text-primary-custom {
-    color: var(--primary-color);
-  }
+.info-icons {
+  width: 64px;
+  height: 64px;
+}
 
-  .search-container {
-    max-width: 600px;
-    border: 1px solid #f1f5f9;
+.cta-banner {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+.card {
+  transition: transform 0.2s ease-in-out;
+  &:hover {
+    transform: translateY(-8px);
   }
 }
 
-.display-font {
-  font-family: 'Sora', sans-serif;
-  line-height: 1.1;
-  letter-spacing: -2px;
-}
-
-.hero-image-wrapper {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%);
-  border-radius: 2rem;
+.w-md-50 {
+  @media (min-width: 768px) {
+    width: 50% !important;
+  }
 }
 

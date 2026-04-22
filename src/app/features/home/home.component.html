@@ -1,66 +1,148 @@
-<section class="hero-section d-flex align-items-center bg-white">
-  <div class="container py-5">
+<section class="bg-white py-5 min-vh-75 d-flex align-items-center">
+  <div class="container py-lg-5">
     <div class="row align-items-center g-5">
-      
       <div class="col-lg-6">
-        <span class="badge rounded-pill bg-light text-primary mb-3 px-3 py-2 fw-semibold">
-          ✨ Tu futuro profesional empieza aquí
-        </span>
-        <h1 class="display-3 fw-bold display-font mb-4">
-          Impulsa tu carrera con <span class="text-primary-custom">Capacitte</span>
+        <h1 class="display-4 fw-bold text-dark mb-4 display-font">
+          La formación que el <span class="text-primary">mercado real</span> está buscando.
         </h1>
-        <p class="lead text-secondary mb-5">
-          Accede a cursos técnicos y encuentra oportunidades laborales de manera fácil, rápida e intuitiva.
+        <p class="lead mb-5 fs-5 pe-lg-5">
+          En <strong>Capacitte</strong>, cerramos la brecha entre la educación y el empleo, preparando a los profesionales con las habilidades exactas que las empresas demandan hoy.
         </p>
-        
-        <div class="search-container shadow-lg rounded-4 p-2 bg-white">
-          <app-search-bar></app-search-bar>
+        <div class="p-2 bg-white border border-light rounded-pill shadow-lg d-flex align-items-center">
+          <app-search-bar class="w-100"></app-search-bar>
         </div>
       </div>
-
+      
       <div class="col-lg-6 d-none d-lg-block">
-        <div class="hero-image-wrapper p-4">
-          <img src="assets/media/images/hero-img.jpeg" alt="Capacitte Hero" class="img-fluid rounded-5 shadow">
+        <div class="p-3 bg-light rounded-5 position-relative">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800" 
+               class="img-fluid rounded-5 shadow-lg" alt="Capacitte formación tecnológica">
         </div>
       </div>
-
     </div>
   </div>
 </section>
-<section class="py-5 bg-light">
-  <div class="container">
-    <div class="d-flex justify-content-between align-items-end mb-4">
-      <div>
-        <h2 class="display-font fw-bold">Cursos Destacados</h2>
-        <p class="text-muted">Aprende de los mejores expertos</p>
+
+<section class="py-5">
+  <div class="container py-4">
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4 text-center">
+        <div class="px-3">
+          <i class="bi bi-graph-up-arrow text-primary display-4 mb-3 d-block"></i>
+          <h3 class="fw-bold h4 display-font">Crecimiento Real</h3>
+          <p class="text-muted">Desarrolla las competencias técnicas que los reclutadores filtran en sus búsquedas de talento.</p>
+        </div>
       </div>
-      <a href="#" class="text-primary fw-bold text-decoration-none">Ver todos los cursos →</a>
+      <div class="col-md-4 text-center border-start border-end border-light">
+        <div class="px-3">
+          <i class="bi bi-clock-history text-primary display-4 mb-3 d-block"></i>
+          <h3 class="fw-bold h4 display-font">Tiempo Optimizado</h3>
+          <p class="text-muted">Programas intensivos diseñados para ir directo al grano, eliminando el relleno académico.</p>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="px-3">
+          <i class="bi bi-award text-primary display-4 mb-3 d-block"></i>
+          <h3 class="fw-bold h4 display-font">Valor Curricular</h3>
+          <p class="text-muted">Certificaciones que las empresas colaboradoras reconocen como estándar de calidad.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-light">
+  <div class="container py-5">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold display-5 mb-3 display-font">Nuestra Metodología 360º</h2>
+      <p class="fs-5 mx-auto w-100 w-md-50">
+        Un ecosistema único donde el aprendizaje práctico se convierte en una oportunidad laboral inmediata.
+      </p>
     </div>
 
     <div class="row g-4">
-      <div class="col-md-6 col-lg-4" *ngFor="let course of featuredCourses">
-        <app-course-card [course]="course"></app-course-card>
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm p-4 rounded-5">
+          <div class="bg-primary bg-opacity-10 text-primary rounded-pill d-inline-flex align-items-center justify-content-center mb-4 info-icons">
+            <i class="bi bi-mortarboard fs-2"></i>
+          </div>
+          <h4 class="fw-bold">1. Aprende haciendo</h4>
+          <p class="text-muted">Resuelve retos técnicos reales diseñados por expertos del sector, simulando entornos de trabajo verdaderos.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm p-4 rounded-5">
+          <div class="bg-success bg-opacity-10 text-success rounded-pill d-inline-flex align-items-center justify-content-center mb-4 info-icons">
+            <i class="bi bi-lightning-charge fs-2"></i>
+          </div>
+          <h4 class="fw-bold">2. Conexión Inmediata</h4>
+          <p class="text-muted">Nuestro sistema de "match" te vincula automáticamente con vacantes que requieren tus nuevas habilidades.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm p-4 rounded-5">
+          <div class="bg-info bg-opacity-10 text-info rounded-pill d-inline-flex align-items-center justify-content-center mb-4 info-icons">
+            <i class="bi bi-briefcase fs-2"></i>
+          </div>
+          <h4 class="fw-bold">3. Éxito Laboral</h4>
+          <p class="text-muted">Accede a entrevistas prioritarias gracias a nuestras alianzas estratégicas con empresas de tecnología.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
-<section class="py-5 bg-white">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="display-font fw-bold">Oportunidades laborales</h2>
-      <p class="text-muted">Conecta con empresas que buscan tu talento</p>
-    </div>
 
-    <div class="row justify-content-center">
-      <div class="col-lg-9">
-        @for (job of featuredJobs; track job.id) {
-          <app-job-card [job]="job"></app-job-card>
-        }
+<section class="py-5">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h2 class="display-5 fw-bold display-font mb-4">La solución definitiva a la brecha de talento</h2>
+        <p class="text-muted lead mb-4">
+          Mientras las universidades tradicionales siguen programas estáticos, Capacitte evoluciona al ritmo del mercado laboral, garantizando que lo que aprendes hoy es lo que las empresas contratarán mañana.
+        </p>
+        <ul class="list-unstyled">
+          <li class="mb-3 d-flex align-items-center">
+            <i class="bi bi-check-circle-fill text-primary me-3 fs-4"></i>
+            <span class="text-muted">Actualización mensual de contenidos</span>
+          </li>
+          <li class="mb-3 d-flex align-items-center">
+            <i class="bi bi-check-circle-fill text-primary me-3 fs-4"></i>
+            <span class="text-muted">Mentores activos en la industria</span>
+          </li>
+          <li class="d-flex align-items-center">
+            <i class="bi bi-check-circle-fill text-primary me-3 fs-4"></i>
+            <span class="text-muted">Bolsa de empleo exclusiva</span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <div class="p-5 bg-dark rounded-5 shadow-lg">
+          <h3 class="text-white mb-3">¿Eres una empresa?</h3>
+          <p class="text-white opacity-75 mb-4">Si eres una empresa y quieres compartir tus ofertas de empleo y/o formaciones desde nuestra plaataforma para conocer talento, no dudes en contactar con nosotros.</p>
+          <button class="btn btn-primary rounded-pill px-4 fw-bold text-light">Contactar como empresa</button>
+        </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="text-center mt-4">
-      <button class="btn btn-outline-primary rounded-pill px-4">Ver todas las ofertas</button>
+<section class="py-5 mb-5">
+  <div class="container">
+    <div class="cta-banner rounded-5 p-5 text-center shadow-lg">
+      <h2 class="display-4 fw-bold mb-4 text-white display-font">Transforma tu futuro laboral hoy</h2>
+      <p class="lead mb-5 opacity-90 mx-auto w-100 w-md-50 text-white">
+        Únete a miles de profesionales que ya han dado el salto al mercado laboral tecnológico con Capacitte.
+      </p>
+      <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+        <a routerLink="/cursos" class="btn btn-light px-5 rounded-pill fw-bold text-primary">
+          <i class="bi bi-search me-2"></i>Explorar Formaciones
+        </a>
+        <a routerLink="/cursos" class="btn btn-outline-light px-5 rounded-pill fw-bold">
+          <i class="bi bi-briefcase me-2"></i>Ver Ofertas
+        </a>
+      </div>
     </div>
   </div>
 </section>
